@@ -1,0 +1,141 @@
+/* common css start */
+:root{
+    --primary-color:#02918c;
+    --light-color:#ffffff;
+    --dark-color: #7e8287;
+    --btn-color:#cfc91d;
+}
+
+h1,h2,h3,h4,h5,h6,
+p,
+small,
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration:none;
+}
+body,textarea{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section_info{
+    margin-bottom: 80px;
+}
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.section_info p{
+    font-size: 16px;
+    line-height: 41px;
+    color: var(--dark-color);
+}
+.section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+/* common css end */
+/* Nav section css start */
+#main_nav{
+   background-color: var(--primary-color);
+}
+#main_nav #main_menu ul li a{
+    color: var(--light-color);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 10.5px 24.5px;
+}
+
+/* Nav section css end */
+/* Banner section css start */
+#banner{
+    position: relative;
+    height: 728px;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: -1;
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.64);
+    z-index: -1;
+}
+#banner h4{
+    color: var(--light-color);
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 28px;
+    color: var(--light-color);
+    line-height: 75px;
+}
+#banner p{
+    font-size: 18px;
+    color: var(--light-color);
+    padding-bottom: 30px;
+}
+#banner a{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    transition: .6s;
+    font-weight: 800;
+}
+#banner a:hover{
+    background-color: var(--btn-color);
+    color: black;}
+/* Banner section css end */
+/* About section css start */
+#about .about_item{
+    padding: 36px 65px;
+    color: #7e8287;
+    border-right: 1px solid #d9dbdb;
+
+}
+#about .about_item:last-child{
+    border-right-color: transparent;
+}
+#about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin: 30px 0;
+    
+}
+#about .about_item p{
+    font-size: 11px;
+    line-height: 21px;
+    color: var(--dark-color);
+}
+
+/* About section css end */
+/* Service section start */
+#service{
+    background-size: cover !important;
+    background-position: center !important;
+}
+/* Service section end */
+
+
+
